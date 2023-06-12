@@ -1,0 +1,134 @@
+.view-projects,
+.view-id-taxonomy_term {
+  text-transform: uppercase;
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.view-projects .view-content,
+.view-id-taxonomy_term .view-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+.view-projects .view-content .views-row,
+.view-id-taxonomy_term .view-content .views-row {
+  text-align: center;
+  background-color: #ffffff;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+}
+.view-projects .view-content .block-field-blocknodeprojecttitle,
+.view-id-taxonomy_term .view-content .block-field-blocknodeprojecttitle {
+  font-size: 25px;
+}
+.view-projects .view-content .block-field-blocknodeprojectfield-type-of-service,
+.view-id-taxonomy_term .view-content .block-field-blocknodeprojectfield-type-of-service {
+  padding-bottom: 20px;
+}
+.view-projects .view-content .block-field-blocknodeprojectfield-details a,
+.view-id-taxonomy_term .view-content .block-field-blocknodeprojectfield-details a {
+  background-color: #6e9bca;
+  text-transform: uppercase;
+  color: #ffffff !important;
+  padding: 7px 10px;
+  transition: all 0.3s ease;
+}
+.view-projects .view-content .block-field-blocknodeprojectfield-details a:hover,
+.view-id-taxonomy_term .view-content .block-field-blocknodeprojectfield-details a:hover {
+  background-color: #67bfdc;
+}
+
+.node--project-full main .block-system-main-block p {
+  padding: 0;
+}
+.node--project-full .layout__region--content {
+  margin: 0 auto;
+  max-width: 1160px;
+  padding: 0 10px;
+}
+.node--project-full .layout__region--content .block-field-blocknodeprojectfield-image {
+  float: right;
+}
+.node--project-full .layout__region--content .block-field-blocknodeprojectfield-image img {
+  max-width: 100%;
+  height: auto;
+  width: 300px;
+}
+.node--project-full .layout__region--content .block-field-blocknodeprojectfield-type-of-service a {
+  color: #373645;
+  font-size: 18px;
+  margin-top: 40px;
+  font-weight: 700;
+}
+.node--project-full .layout__region--content .block-field-blocknodeprojectfield-type-of-service a:hover {
+  color: #6e9bca;
+}
+
+.block-field-blocknodeprojecttitle span {
+  font-size: 25px;
+}
+
+.block-field-blocknodeprojectfield-details a {
+  background-color: #6e9bca;
+  text-transform: uppercase;
+  color: #ffffff !important;
+  padding: 7px 10px;
+  transition: all 0.3s ease;
+}
+.block-field-blocknodeprojectfield-details a:hover {
+  background-color: #67bfdc;
+}
+
+/* For screens with width less than 320px*/
+@media (max-width: 500px) {
+  /* CSS rules for responsive design */
+  .view-projects .view-content {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+  }
+  .node--project-full {
+    padding-right: 20px;
+  }
+  .node--project-full .layout__region--content .block-field-blocknodeprojectfield-image img {
+    max-width: 100%;
+    height: auto;
+    width: 150px;
+    padding: 10px;
+  }
+}
+/* For screens with width from 501px to 800px */
+@media (min-width: 501px) and (max-width: 800px) {
+  /* CSS rules for responsive design */
+  .view-projects .view-content {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+  .node--project-full {
+    padding-right: 20px;
+  }
+  .node--project-full .layout__region--content .block-field-blocknodeprojectfield-image img {
+    max-width: 100%;
+    height: auto;
+    width: 300px;
+    padding: 10px;
+  }
+}
+/* For screens with width from 801px to 1200px */
+@media (min-width: 801px) and (max-width: 1200px) {
+  /* CSS rules for responsive design */
+  .view-projects .view-content .block-field-blocknodeprojecttitle {
+    font-size: 19px;
+  }
+  .node--project-full {
+    padding-right: 20px;
+  }
+  .node--project-full .layout__region--content .block-field-blocknodeprojectfield-image img {
+    max-width: 100%;
+    height: auto;
+    width: 300px;
+    padding: 10px;
+  }
+}
+
+/*# sourceMappingURL=projects.css.map */

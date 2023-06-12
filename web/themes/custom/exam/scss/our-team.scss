@@ -1,0 +1,253 @@
+@import "variables";
+@import "mixin";
+
+.view-team{
+  text-align: center;
+  text-transform: uppercase;
+  max-width: $desktopLarge;
+  margin: 0 auto;
+  padding: 0 10px;
+
+  .view-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    .views-row {
+      background-color: $white;
+      margin-bottom: 20px;
+      padding-bottom: 15px;
+    }
+  }
+}
+.node--team-member-full{
+  max-width: $desktopLarge;
+  margin: 0 auto;
+  padding: 0 10px;
+  .layout--onecol:last-child{
+    .layout__region--content{
+      display: flex;
+      flex-direction: row;
+      .block-field-blocknodeteam-memberfield-image{
+        img{
+          width: 500px;
+          height: auto;
+          max-width: 100%;
+        }
+      }
+      .block-field-blocknodeteam-memberbody{
+        padding-left: 15px;
+        p{
+          margin: 0;
+        }
+      }
+    }
+  }
+  .node__content{
+    .layout--onecol:first-child{
+      margin: 20px 0;
+      .layout__region--content{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        .block-field-blocknodeteam-memberfield-employee-position{
+          font-size: 18px;
+          font-weight: 600;
+          color: $dark-blue;
+        }
+        .block-field-blocknodeteam-memberfield-social-networks{
+          margin: 0 20px;
+          ul{
+            margin: 0;
+            display: flex;
+            flex-direction: row;
+            li{
+              margin: 0 20px;
+              span{
+                color: $blue;
+                font-size: 25px;
+                transition: all 0.1s ease;
+                &:hover{
+                  color: $light-blue;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// Widget like
+.block-extra-field-blocknodeteam-memberlikeit{
+  article.likeit {
+    text-align: end;
+    .likeit-wrapper{
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      .likeit-title{
+        color: $white;
+        font-size: 0;
+        width: 25px;
+        height: 22px;
+        background-image: url("/sites/default/files/unliked.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: all 0.3s ease-in-out;
+        &:hover{
+          background-image: url("/sites/default/files/like-hover.svg");
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+      }
+      .likeit-count{
+        padding-left: 10px;
+        color: $dark-blue;
+      }
+    }
+    .use-ajax.likeit-wrapper.liked {
+      .likeit-title {
+        color: $white;
+        font-size: 0;
+        width: 25px;
+        height: 22px;
+        background-image: url("/sites/default/files/liked.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        &:hover {
+          background-image: url("/sites/default/files/like-hover.svg");
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+      }
+    }
+  }
+}
+.ajax-progress.ajax-progress--throbber {
+  display: none;
+}
+/* For screens with width less than 500px*/
+@media (max-width: 500px){
+  /* CSS rules for responsive design */
+  .view-team{
+    .view-content {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 20px;
+    }
+  }
+  .node--team-member-full{
+    .layout--onecol:last-child{
+      .layout__region--content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .block-field-blocknodeteam-memberbody{
+          padding: 0;
+        }
+      }
+    }
+    .node__content{
+      .layout--onecol:first-child{
+        .layout__region--content{
+          .block-field-blocknodeteam-memberfield-employee-position{
+            text-align: center;
+            font-size: 18px;
+            font-weight: 600;
+            color: $dark-blue;
+          }
+          .block-field-blocknodeteam-memberfield-social-networks{
+            margin: 0 5px;
+            ul{
+              margin: 0;
+              display: flex;
+              flex-direction: row;
+              li{
+                margin: 0 5px;
+                span{
+                  color: $blue;
+                  font-size: 25px;
+                  transition: all 0.1s ease;
+                  &:hover{
+                    color: $light-blue;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/* For screens with width from 501px to 800px */
+@media (min-width: 501px) and (max-width: 800px) {
+  /* CSS rules for responsive design */
+  .view-team{
+    .view-content {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 20px;
+    }
+  }
+  .node--team-member-full{
+    max-width: $desktopLarge;
+    margin: 0 auto;
+    padding: 0 10px;
+    .layout--onecol:last-child{
+      .layout__region--content{
+        display: flex;
+        flex-direction: row;
+        .block-field-blocknodeteam-memberfield-image{
+          img{
+            width: 500px;
+            height: auto;
+            max-width: 100%;
+          }
+        }
+        .block-field-blocknodeteam-memberbody{
+          p{
+            margin: 0;
+          }
+        }
+      }
+    }
+    .node__content{
+      .layout--onecol:first-child{
+        margin: 20px 0;
+        .layout__region--content{
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          .block-field-blocknodeteam-memberfield-employee-position{
+            font-size: 18px;
+            font-weight: 600;
+            color: $dark-blue;
+          }
+          .block-field-blocknodeteam-memberfield-social-networks{
+            margin: 0 20px;
+            ul{
+              margin: 0;
+              display: flex;
+              flex-direction: row;
+              li{
+                margin: 0 20px;
+                span{
+                  color: $blue;
+                  font-size: 25px;
+                  transition: all 0.1s ease;
+                  &:hover{
+                    color: $light-blue;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

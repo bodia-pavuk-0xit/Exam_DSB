@@ -1,0 +1,43 @@
+@import "variables";
+@import "mixin";
+
+.view-clients {
+  text-transform: uppercase;
+  max-width: $desktopLarge;
+  margin: 0 auto;
+  padding: 0 10px;
+  .view-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+
+    .views-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background-color: $white;
+      margin-bottom: 20px;
+      padding-bottom: 15px;
+      article.node.node--client.node--client-teaser.node--view-mode-teaser {
+        width: 100%;
+      }
+      img{
+        max-width: 500px;
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
+/* For screens with width less than 500px*/
+@media (max-width: 500px){
+  /* CSS rules for responsive design */
+  .view-clients {
+    .view-content {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 20px;
+    }
+  }
+}

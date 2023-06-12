@@ -1,0 +1,161 @@
+.node--contact-us .layout--twocol-section--50-50 {
+  text-transform: uppercase;
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 10px;
+  display: flex;
+  flex-direction: row;
+}
+.node--contact-us .layout--twocol-section--50-50 .layout__region--first {
+  width: 50%;
+}
+.node--contact-us .layout--twocol-section--50-50 .layout__region--first .contact-message-form {
+  padding-right: 15px;
+}
+.node--contact-us .layout--twocol-section--50-50 .layout__region--first .contact-message-form .form-item {
+  margin: 10px 0;
+}
+.node--contact-us .layout--twocol-section--50-50 .layout__region--first .contact-message-form input {
+  height: 60px;
+}
+.node--contact-us .layout--twocol-section--50-50 .layout__region--first .contact-message-form input[type=submit] {
+  background: #e03114;
+  text-transform: uppercase;
+  font-size: 16px;
+  border-radius: 2px;
+}
+.node--contact-us .layout--twocol-section--50-50 .layout__region--first .contact-message-form input[type=submit]:hover {
+  background: radial-gradient(circle, rgb(255, 126, 126) 0%, rgb(224, 20, 20) 100%);
+}
+.node--contact-us .layout--twocol-section--50-50 .layout__region--first .contact-message-form textarea {
+  resize: none;
+  height: 308px;
+}
+.node--contact-us .layout--twocol-section--50-50 .layout__region--first .contact-message-form label,
+.node--contact-us .layout--twocol-section--50-50 .layout__region--first .contact-message-form input#edit-copy {
+  display: none;
+}
+.node--contact-us .layout--twocol-section--50-50 .layout__region--second {
+  width: 50%;
+}
+.node--contact-us .layout--twocol-section--50-50 .layout__region--second .block-field-blocknodecontact-usbody,
+.node--contact-us .layout--twocol-section--50-50 .layout__region--second .block-field-blocknodecontact-usfield-map {
+  padding-left: 15px;
+}
+.node--contact-us .layout--twocol-section--50-50 .layout__region--second strong {
+  text-transform: uppercase;
+}
+.node--contact-us .layout--twocol-section--50-50 .layout__region--second p {
+  text-transform: none;
+}
+
+.block-search {
+  margin-left: 10px;
+}
+.block-search input {
+  border: 1px solid #999999;
+}
+.block-search #search-block-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.block-search #search-block-form input[type=search] {
+  width: 150px;
+  height: 45px;
+}
+.block-search #search-block-form input#edit-submit,
+.block-search #search-block-form input#edit-submit--2 {
+  max-width: 35px;
+  height: 33px;
+  font-size: 0;
+  background-color: #ffffff;
+  border: 1px solid #999999 !important;
+  line-height: 0;
+  padding: 5px;
+}
+
+.page-wrapper *:focus, .ui-dialog *:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.block-system-main-block .node_search-results,
+.block-system-main-block h2,
+.block-system-main-block .view-id-taxonomy_term,
+.block-system-main-block .search-form {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.block-system-main-block .node_search-results li,
+.block-system-main-block h2 li,
+.block-system-main-block .view-id-taxonomy_term li,
+.block-system-main-block .search-form li {
+  margin: 0;
+}
+.block-system-main-block .node_search-results .search-result__title a,
+.block-system-main-block h2 .search-result__title a,
+.block-system-main-block .view-id-taxonomy_term .search-result__title a,
+.block-system-main-block .search-form .search-result__title a {
+  color: #373645;
+}
+.block-system-main-block .node_search-results .search-result__title a:hover,
+.block-system-main-block h2 .search-result__title a:hover,
+.block-system-main-block .view-id-taxonomy_term .search-result__title a:hover,
+.block-system-main-block .search-form .search-result__title a:hover {
+  color: #6e9bca;
+}
+
+.block-system-main-block h3 {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+/* For screens with width less than 800px*/
+@media (max-width: 800px) {
+  /* CSS rules for responsive design */
+  .node--contact-us-full .layout--twocol-section--50-50 {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    width: 100%;
+  }
+  .node--contact-us-full .layout--twocol-section--50-50 .layout__region--first {
+    width: 100%;
+  }
+  .node--contact-us-full .layout--twocol-section--50-50 .layout__region--first form#contact-message-contact-us-form {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .node--contact-us-full .layout--twocol-section--50-50 .layout__region--first form#contact-message-contact-us-form input,
+  .node--contact-us-full .layout--twocol-section--50-50 .layout__region--first form#contact-message-contact-us-form textarea {
+    border-radius: 5px;
+  }
+  .node--contact-us-full .layout--twocol-section--50-50 .layout__region--first form#contact-message-contact-us-form .form-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .node--contact-us-full .layout--twocol-section--50-50 .layout__region--first .contact-message-form {
+    padding-right: 20px;
+  }
+  .node--contact-us-full .layout--twocol-section--50-50 .layout__region--second {
+    width: 100%;
+  }
+  .node--contact-us-full .layout--twocol-section--50-50 .layout__region--second .block-field-blocknodecontact-usbody,
+  .node--contact-us-full .layout--twocol-section--50-50 .layout__region--second .block-field-blocknodecontact-usfield-map {
+    padding-left: 0;
+    padding-right: 20px;
+  }
+  .node--contact-us-full .layout--twocol-section--50-50 .layout__region--second .block-field-blocknodecontact-usbody {
+    padding-right: 0;
+  }
+  .node--contact-us-full .layout--twocol-section--50-50 .layout__region--second .block-field-blocknodecontact-usbody p {
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=contacts.css.map */

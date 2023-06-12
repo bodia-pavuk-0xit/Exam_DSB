@@ -1,0 +1,57 @@
+<?php
+
+/**
+ * Implements hook_form_alter().
+ */
+function exam_form_alter(&$form, &$form_state, $form_id) {
+  if ($form_id === 'contact_message_contact_us_form') {
+    $form['actions']['submit']['#value'] = t('Submit Form');
+  }
+  if ($form_id === 'search_block_form') {
+    $form['actions']['submit']['#type'] = 'image_button';
+    $form['actions']['submit']['#src'] = 'sites/default/files/loupe.png';
+    $form['actions']['submit']['#attributes']['alt'] = 'Пошук';
+    unset($form['actions']['submit']['#value']);
+  }
+  if ($form_id == 'contact_message_contact_us_form') {
+    // Add custom form validator to the form
+    $form['#validate'][] = 'exam_custom_form_validation';
+  }
+}
+
+/**
+ * Custom form validation callback.
+ */
+function exam_custom_form_validation(&$form, &$form_state) {
+  // Perform validation here
+  $full_name = $form_state->getValue('field_full_name')[0]['value'];
+  $email = $form_state->getValue('field_email_id')[0]['value'];
+  $phone_number = $form_state->getValue('field_phone_number')[0]['value'];
+  $message = $form_state->getValue('message')[0]['value'];
+
+  // Validation for "Full Name" (non-empty value)
+  if (empty(trim($full_name))) {
+    $form_state->setErrorByName('field_full_name', t('Please enter your full name.'));
+  }
+
+  // Validation for "Email ID" (email format)
+  if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    $form_state->setErrorByName('field_email_id', t('Please enter a valid email address.'));
+  }
+
+  // Validation for "Phone Number" (non-empty value and contains only digits)
+  if (empty(trim($phone_number))) {
+    $form_state->setErrorByName('field_phone_number', t('Please enter your phone number.'));
+  }
+  elseif (!is_numeric($phone_number)) {
+    $form_state->setErrorByName('field_phone_number', t('Please enter a valid phone number (only digits are allowed).'));
+  }
+
+  // Validation for "Message" (non-empty value)
+  if (empty(trim($message))) {
+    $form_state->setErrorByName('message', t('Please enter a message.'));
+  }
+}
+
+
+

@@ -1,0 +1,40 @@
+.view-clients {
+  text-transform: uppercase;
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.view-clients .view-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 40px;
+}
+.view-clients .view-content .views-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #ffffff;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+}
+.view-clients .view-content .views-row article.node.node--client.node--client-teaser.node--view-mode-teaser {
+  width: 100%;
+}
+.view-clients .view-content .views-row img {
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+}
+
+/* For screens with width less than 500px*/
+@media (max-width: 500px) {
+  /* CSS rules for responsive design */
+  .view-clients .view-content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+  }
+}
+
+/*# sourceMappingURL=clients.css.map */

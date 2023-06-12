@@ -1,0 +1,192 @@
+@import "variables";
+@import "mixin";
+
+.view-news,
+.view-id-taxonomy_term{
+  text-transform: uppercase;
+  max-width: $desktopLarge;
+  margin: 0 auto;
+  padding: 0 10px;
+  .view-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    .views-row {
+      text-align: center;
+      background-color: $white;
+      margin-bottom: 20px;
+      padding-bottom: 15px;
+      .block-field-blocknodenewstitle{
+        text-align: start;
+      }
+    }
+  }
+  nav.pager{
+    padding-bottom: 120px;
+    .pager__items{
+      .pager__item{
+        background: none;
+        .pager__link.is-active{
+          color: #646464;
+          background: #dbdbdb;
+        }
+      }
+      .pager__link.is-active, .pager__item--current {
+        color: #646464;
+        background: #dbdbdb;
+      }
+    }
+  }
+}
+
+.view-filters {
+  .views-exposed-form.views-exposed-form {
+    border: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+
+    input[type=text] {
+      max-width: 320px;
+      width: 100%;
+    }
+    input[type=submit] {
+      background-color: $light-blue;
+      color: $white;
+      &:hover {
+        background-color: #b4daef;
+      }
+    }
+
+    input#edit-search-api-fulltext {
+      width: 100%;
+    }
+  }
+}
+.node--news-full{
+  .layout__region--content{
+    margin: 0 auto;
+    max-width: $desktopLarge;
+    padding: 0 10px;
+    .block-field-blocknodenewsfield-image,
+    .block-field-blocknodenewsfield-writer{
+      float: right;
+      img{
+        max-width: 100%;
+        height: auto;
+        width: 250px;
+      }
+    }
+    .block-field-blocknodenewsfield-image{
+      padding-right: 20px;
+      img{
+        padding: 10px;
+      }
+    }
+    .block-field-blocknodenewsbody {
+      padding-right: 20px;
+    }
+  }
+  .layout--onecol:last-child{
+    margin-top: 50px;
+    .layout__region--content{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      font-size: 18px;
+      font-weight: 600;
+      color: $dark-blue;
+      line-height: 22px;
+      .block{
+        margin: 0 15px;
+      }
+      .block-field-blocknodenewsfield-writer{
+        position: relative;
+        &:after{
+          content: '/';
+          font-size: 18px;
+          font-weight: 600;
+          line-height: 22px;
+          color: $dark-blue;
+          position: absolute;
+          right: -18px;
+          top: 0;
+        }
+      }
+      .block-field-blocknodenewsfield-news-category{
+        position: relative;
+        &:after{
+          content: '/';
+          font-size: 18px;
+          font-weight: 600;
+          line-height: 22px;
+          color: $dark-blue;
+          position: absolute;
+          right: -18px;
+          top: 0;
+        }
+        .field__item{
+          max-width: none;
+        }
+        a{
+          transition: color 0.3s ease;
+          &:hover{
+            color: $blue;
+          }
+        }
+      }
+      .block-field-blocknodenewsfield-day{
+        position: relative;
+        &:after{
+          content: '/';
+          font-size: 18px;
+          font-weight: 600;
+          line-height: 22px;
+          color: $dark-blue;
+          position: absolute;
+          right: -18px;
+          top: 0;
+        }
+      }
+      .block-field-blocknodenewsfield-day,
+      a{
+        font-size: 18px;
+        font-weight: 600;
+        color: $dark-blue;
+        line-height: 22px;
+      }
+    }
+  }
+}
+/* For screens with width less than 1024px*/
+@media (max-width: 1024px){
+  /* CSS rules for responsive design */
+  .view-news,
+  .view-id-taxonomy_term{
+    .view-content {
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 30px;
+      .node--news-teaser{
+        img{
+          width: 100px;
+        }
+        .views-row{
+          padding-right: 12px;
+        }
+      }
+    }
+  }
+  .node--news-full{
+    .layout__region--content {
+      .block-field-blocknodenewsfield-image {
+        img {
+          width: 150px;
+          height: auto;
+        }
+      }
+    }
+  }
+}
+
+

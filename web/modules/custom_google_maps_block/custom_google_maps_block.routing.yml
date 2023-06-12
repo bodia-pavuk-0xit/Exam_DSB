@@ -1,0 +1,8 @@
+maps.form:
+  path: '/admin/config/user-interface/maps'
+  defaults:
+    _form: '\Drupal\custom_google_maps_block\Form\MapsForm'
+    _title: ' Google Maps block'
+  requirements:
+    _permission: 'access administration pages'
+

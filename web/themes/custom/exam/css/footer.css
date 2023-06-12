@@ -1,0 +1,169 @@
+.page-wrapper .page {
+  position: relative;
+  min-height: 100vh;
+}
+.page-wrapper .page footer {
+  width: 100%;
+  height: 180px;
+  background-color: #373645;
+  position: absolute;
+  bottom: 0;
+}
+.page-wrapper .page footer .region-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1160px;
+  margin: 0 auto;
+  height: 100%;
+}
+.page-wrapper .page footer .region-footer .block-system-branding-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background-color: #373645;
+  width: 230px;
+}
+.page-wrapper .page footer .region-footer .block-system-branding-block .site-name a {
+  font-size: 30px;
+  font-weight: 600;
+  color: #6e9bca;
+  line-height: 20px;
+}
+.page-wrapper .page footer .region-footer .block-system-branding-block .site-slogan {
+  color: white;
+}
+.page-wrapper .page footer .region-footer .block-social-media-links ul {
+  display: flex;
+  flex-direction: row;
+}
+.page-wrapper .page footer .region-footer .block-social-media-links ul li span {
+  color: #6e9bca;
+  font-size: 30px;
+  transition: all 0.3s ease;
+}
+.page-wrapper .page footer .region-footer .block-social-media-links ul li span:hover {
+  color: #67bfdc;
+}
+.page-wrapper .page .main-content {
+  padding-bottom: 40px;
+}
+
+/* For screens with width less than 320px*/
+@media (max-width: 320px) {
+  /* CSS rules for responsive design */
+  .page-wrapper .page footer {
+    width: 100%;
+    height: 180px;
+    background-color: #373645;
+    position: static;
+  }
+  .page-wrapper .page footer .region-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1160px;
+    margin: 0 auto;
+    height: 100%;
+  }
+  .page-wrapper .page footer .region-footer .block-system-branding-block {
+    display: block;
+    margin: 0 auto 30px;
+    text-align: center;
+    height: auto;
+    background-color: #373645;
+    width: 230px;
+  }
+  .page-wrapper .page footer .region-footer .block-system-branding-block .site-name a {
+    font-size: 30px;
+    font-weight: 600;
+    color: #6e9bca;
+    line-height: 20px;
+  }
+  .page-wrapper .page footer .region-footer .block-system-branding-block .site-slogan {
+    color: white;
+  }
+  .page-wrapper .page footer .region-footer .block-social-media-links ul {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+  }
+  .page-wrapper .page footer .region-footer .block-social-media-links ul li span {
+    color: #6e9bca;
+    font-size: 30px;
+    transition: all 0.3s ease;
+  }
+  .page-wrapper .page footer .region-footer .block-social-media-links ul li span:hover {
+    color: #67bfdc;
+  }
+  .page-wrapper .page .main-content {
+    padding-bottom: 40px;
+  }
+}
+/* For screens with width from 320px to 768px */
+@media (min-width: 320px) and (max-width: 768px) {
+  /* CSS rules for responsive design */
+  .page-wrapper .page footer {
+    width: 100%;
+    height: 180px;
+    background-color: #373645;
+    position: static;
+  }
+  .page-wrapper .page footer a.social-media-link-icon--linkedin {
+    padding-right: 30px;
+  }
+  .page-wrapper .page footer .region-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1160px;
+    margin: 0 auto;
+    height: 100%;
+  }
+  .page-wrapper .page footer .region-footer .block-system-branding-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: #373645;
+    width: 230px;
+  }
+  .page-wrapper .page footer .region-footer .block-system-branding-block .site-name a {
+    font-size: 30px;
+    font-weight: 600;
+    color: #6e9bca;
+    line-height: 20px;
+  }
+  .page-wrapper .page footer .region-footer .block-system-branding-block .site-slogan {
+    color: white;
+  }
+  .page-wrapper .page footer .region-footer .block-social-media-links ul {
+    display: flex;
+    flex-direction: row;
+  }
+  .page-wrapper .page footer .region-footer .block-social-media-links ul li span {
+    color: #6e9bca;
+    font-size: 30px;
+    transition: all 0.3s ease;
+  }
+  .page-wrapper .page footer .region-footer .block-social-media-links ul li span:hover {
+    color: #67bfdc;
+  }
+  .page-wrapper .page .main-content {
+    padding-bottom: 40px;
+  }
+}
+@media (min-width: 768px) {
+  /* CSS rules for responsive design */
+  .page-wrapper .page {
+    padding-bottom: 150px;
+  }
+}

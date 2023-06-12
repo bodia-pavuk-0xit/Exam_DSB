@@ -1,0 +1,248 @@
+.view-services,
+.view-id-taxonomy_term {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.view-services .view-content,
+.view-id-taxonomy_term .view-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+.view-services .view-content .views-row,
+.view-id-taxonomy_term .view-content .views-row {
+  margin-bottom: 30px;
+}
+.view-services .view-content .views-row .node--service-teaser,
+.view-id-taxonomy_term .view-content .views-row .node--service-teaser {
+  text-align: center;
+  text-transform: uppercase;
+}
+.view-services .view-content .views-row .node--service-teaser .block-field-blocknodeservicefield-type-of-service,
+.view-id-taxonomy_term .view-content .views-row .node--service-teaser .block-field-blocknodeservicefield-type-of-service {
+  font-size: 25px;
+  line-height: 40px;
+  margin-top: 20px;
+}
+.view-services .view-content .views-row .node--service-teaser .block-field-blocknodeservicebody,
+.view-id-taxonomy_term .view-content .views-row .node--service-teaser .block-field-blocknodeservicebody {
+  color: #999999;
+  margin: 10px 0 30px 0;
+}
+.view-services .view-content .views-row .node--service-teaser .block-field-blocknodeservicefield-read-more-text a,
+.view-id-taxonomy_term .view-content .views-row .node--service-teaser .block-field-blocknodeservicefield-read-more-text a {
+  background-color: #6e9bca;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 7px 10px;
+  transition: all 0.1s ease;
+}
+.view-services .view-content .views-row .node--service-teaser .block-field-blocknodeservicefield-read-more-text a:hover,
+.view-id-taxonomy_term .view-content .views-row .node--service-teaser .block-field-blocknodeservicefield-read-more-text a:hover {
+  background-color: #67bfdc;
+}
+
+.node--service-full .layout__region--content {
+  margin: 0 auto;
+  max-width: 1160px;
+  padding: 0 10px;
+}
+.node--service-full .layout__region--content .block-field-blocknodeservicefield-image {
+  float: right;
+}
+.node--service-full .layout__region--content .block-field-blocknodeservicefield-image img {
+  max-width: 100%;
+  height: auto;
+  width: 150px;
+}
+
+/* For screens with width less than 320px*/
+@media (max-width: 500px) {
+  /* CSS rules for responsive design */
+  h1.page-title {
+    font-size: 25px;
+  }
+  .view-services {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+  .view-services .view-content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+  }
+  .view-services .view-content .views-row {
+    margin-bottom: 30px;
+  }
+  .view-services .view-content .views-row .node--service-teaser {
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .view-services .view-content .views-row .node--service-teaser .block-field-blocknodeservicefield-type-of-service {
+    font-size: 25px;
+    line-height: 40px;
+    margin-top: 20px;
+  }
+  .view-services .view-content .views-row .node--service-teaser .block-field-blocknodeservicebody {
+    color: #999999;
+    margin: 10px 0 30px 0;
+  }
+  .view-services .view-content .views-row .node--service-teaser .block-field-blocknodeservicefield-read-more-text a {
+    background-color: #6e9bca;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 7px 10px;
+    transition: all 0.1s ease;
+  }
+  .view-services .view-content .views-row .node--service-teaser .block-field-blocknodeservicefield-read-more-text a:hover {
+    background-color: #67bfdc;
+  }
+  .node--service-full {
+    padding-right: 20px;
+  }
+  .node--service-full .layout__region--content {
+    margin: 0 auto;
+    max-width: 1160px;
+    padding: 0 10px;
+  }
+  .node--service-full .layout__region--content .block-field-blocknodeservicefield-image {
+    float: right;
+    padding-right: 20px;
+    padding-left: 10px;
+  }
+  .node--service-full .layout__region--content .block-field-blocknodeservicefield-image img {
+    max-width: 100%;
+    height: auto;
+    width: 150px;
+  }
+  .node--service-full .layout__region--content .block-field-blocknodeservicebody {
+    font-size: 14px;
+  }
+}
+/* For screens with width from 501px to 800px */
+@media (min-width: 501px) and (max-width: 800px) {
+  /* CSS rules for responsive design */
+  .view-services {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+  .view-services .view-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+  .view-services .view-content .views-row {
+    margin-bottom: 30px;
+  }
+  .view-services .view-content .views-row .node--service-teaser {
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .view-services .view-content .views-row .node--service-teaser .block-field-blocknodeservicefield-type-of-service {
+    font-size: 25px;
+    line-height: 40px;
+    margin-top: 20px;
+  }
+  .view-services .view-content .views-row .node--service-teaser .block-field-blocknodeservicebody {
+    color: #999999;
+    margin: 10px 0 30px 0;
+  }
+  .view-services .view-content .views-row .node--service-teaser .block-field-blocknodeservicefield-read-more-text a {
+    background-color: #6e9bca;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 7px 10px;
+    transition: all 0.1s ease;
+  }
+  .view-services .view-content .views-row .node--service-teaser .block-field-blocknodeservicefield-read-more-text a:hover {
+    background-color: #67bfdc;
+  }
+  .node--service-full {
+    padding-right: 20px;
+  }
+  .node--service-full .layout__region--content {
+    margin: 0 auto;
+    max-width: 1160px;
+    padding: 0 10px;
+  }
+  .node--service-full .layout__region--content .block-field-blocknodeservicefield-image {
+    float: right;
+    padding-right: 20px;
+    padding-left: 10px;
+  }
+  .node--service-full .layout__region--content .block-field-blocknodeservicefield-image img {
+    max-width: 100%;
+    height: auto;
+    width: 150px;
+  }
+  .node--service-full .layout__region--content .block-field-blocknodeservicebody {
+    font-size: 14px;
+  }
+}
+/* For screens with width from 801px to 1200px */
+@media (min-width: 801px) and (max-width: 1200px) {
+  /* CSS rules for responsive design */
+  .view-services {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+  .view-services .view-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+  }
+  .view-services .view-content .views-row {
+    margin-bottom: 30px;
+  }
+  .view-services .view-content .views-row .node--service-teaser {
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .view-services .view-content .views-row .node--service-teaser .block-field-blocknodeservicefield-type-of-service {
+    font-size: 25px;
+    line-height: 40px;
+    margin-top: 20px;
+    height: 80px;
+  }
+  .view-services .view-content .views-row .node--service-teaser .block-field-blocknodeservicebody {
+    color: #999999;
+    margin: 10px 0 30px 0;
+  }
+  .view-services .view-content .views-row .node--service-teaser .block-field-blocknodeservicefield-read-more-text a {
+    background-color: #6e9bca;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 7px 10px;
+    transition: all 0.1s ease;
+  }
+  .view-services .view-content .views-row .node--service-teaser .block-field-blocknodeservicefield-read-more-text a:hover {
+    background-color: #67bfdc;
+  }
+  .node--service-full {
+    padding-right: 20px;
+  }
+  .node--service-full .layout__region--content {
+    margin: 0 auto;
+    max-width: 1160px;
+    padding: 0 10px;
+  }
+  .node--service-full .layout__region--content .block-field-blocknodeservicefield-image {
+    float: right;
+    padding-right: 20px;
+    padding-left: 10px;
+  }
+  .node--service-full .layout__region--content .block-field-blocknodeservicefield-image img {
+    max-width: 100%;
+    height: auto;
+    width: 150px;
+  }
+  .node--service-full .layout__region--content .block-field-blocknodeservicebody {
+    font-size: 14px;
+  }
+}
+
+/*# sourceMappingURL=services.css.map */

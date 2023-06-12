@@ -1,0 +1,28 @@
+<div class="page">
+  <header role="banner">
+    {{ page.header }}
+  </header>
+  {% if page.banner %}
+    <div class="banner-wrapper">
+      {{ page.banner }}
+    </div>
+  {% endif %}
+  {{ page.primary_menu }}
+  {{ page.highlighted }}
+  <div class="main-content">
+    <main role="main">
+      <a id="main_content" tabindex="-1"></a>
+      <div class="layout-content">
+        {{ page.content }}
+      </div>
+    </main>
+    {% if page.sidebar %}
+      <aside class="sidebar" role="complementary">
+        {{ page.sidebar }}
+      </aside>
+    {% endif %}
+  </div>
+  <footer role="contentinfo">
+    {{ page.footer }}
+  </footer>
+</div>

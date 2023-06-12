@@ -1,0 +1,9 @@
+maps_style:
+  version: 1.x
+  js:
+    assets/js/custom.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupalSettings
+

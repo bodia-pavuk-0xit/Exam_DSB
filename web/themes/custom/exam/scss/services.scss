@@ -1,0 +1,254 @@
+@import "variables";
+@import "mixin";
+
+.view-services,
+.view-id-taxonomy_term{
+  max-width: $desktopLarge;
+  margin: 0 auto;
+  padding: 0 10px;
+  .view-content{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    .views-row{
+      margin-bottom: 30px;
+      .node--service-teaser{
+        text-align: center;
+        text-transform: uppercase;
+        .block-field-blocknodeservicefield-type-of-service{
+          font-size: 25px;
+          line-height: 40px;
+          margin-top: 20px;
+        }
+        .block-field-blocknodeservicebody{
+          color: $gray;
+          margin: 10px 0 30px 0;
+        }
+        .block-field-blocknodeservicefield-read-more-text{
+          a{
+            background-color: $blue;
+            text-transform: uppercase;
+            color: $white;
+            padding: 7px 10px;
+            transition: all 0.1s ease;
+            &:hover{
+              background-color: $light-blue;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.node--service-full{
+  .layout__region--content{
+    margin: 0 auto;
+    max-width: $desktopLarge;
+    padding: 0 10px;
+    .block-field-blocknodeservicefield-image{
+      float: right;
+      img{
+        max-width: 100%;
+        height: auto;
+        width: 150px;
+      }
+    }
+  }
+}
+/* For screens with width less than 320px*/
+@media (max-width: 500px){
+  /* CSS rules for responsive design */
+  h1.page-title {
+    font-size: 25px;
+  }
+  .view-services{
+    max-width: $desktopLarge;
+    margin: 0 auto;
+    padding: 0 10px;
+    .view-content{
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 20px;
+      .views-row{
+        margin-bottom: 30px;
+        .node--service-teaser{
+          text-align: center;
+          text-transform: uppercase;
+          .block-field-blocknodeservicefield-type-of-service{
+            font-size: 25px;
+            line-height: 40px;
+            margin-top: 20px;
+          }
+          .block-field-blocknodeservicebody{
+            color: $gray;
+            margin: 10px 0 30px 0;
+          }
+          .block-field-blocknodeservicefield-read-more-text{
+            a{
+              background-color: $blue;
+              text-transform: uppercase;
+              color: $white;
+              padding: 7px 10px;
+              transition: all 0.1s ease;
+              &:hover{
+                background-color: $light-blue;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .node--service-full{
+    padding-right: 20px;
+    .layout__region--content{
+      margin: 0 auto;
+      max-width: $desktopLarge;
+      padding: 0 10px;
+      .block-field-blocknodeservicefield-image{
+        float: right;
+        padding-right: 20px;
+        padding-left: 10px;
+        img{
+          max-width: 100%;
+          height: auto;
+          width: 150px;
+        }
+      }
+      .block-field-blocknodeservicebody{
+        font-size: 14px;
+      }
+    }
+  }
+}
+/* For screens with width from 501px to 800px */
+@media (min-width: 501px) and (max-width: 800px) {
+  /* CSS rules for responsive design */
+  .view-services{
+    max-width: $desktopLarge;
+    margin: 0 auto;
+    padding: 0 10px;
+    .view-content{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 20px;
+      .views-row{
+        margin-bottom: 30px;
+        .node--service-teaser{
+          text-align: center;
+          text-transform: uppercase;
+          .block-field-blocknodeservicefield-type-of-service{
+            font-size: 25px;
+            line-height: 40px;
+            margin-top: 20px;
+          }
+          .block-field-blocknodeservicebody{
+            color: $gray;
+            margin: 10px 0 30px 0;
+          }
+          .block-field-blocknodeservicefield-read-more-text{
+            a{
+              background-color: $blue;
+              text-transform: uppercase;
+              color: $white;
+              padding: 7px 10px;
+              transition: all 0.1s ease;
+              &:hover{
+                background-color: $light-blue;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .node--service-full{
+    padding-right: 20px;
+    .layout__region--content{
+      margin: 0 auto;
+      max-width: $desktopLarge;
+      padding: 0 10px;
+      .block-field-blocknodeservicefield-image{
+        float: right;
+        padding-right: 20px;
+        padding-left: 10px;
+        img{
+          max-width: 100%;
+          height: auto;
+          width: 150px;
+        }
+      }
+      .block-field-blocknodeservicebody{
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+/* For screens with width from 801px to 1200px */
+@media (min-width: 801px) and (max-width: 1200px) {
+  /* CSS rules for responsive design */
+  .view-services{
+    max-width: $desktopLarge;
+    margin: 0 auto;
+    padding: 0 10px;
+    .view-content{
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 20px;
+      .views-row{
+        margin-bottom: 30px;
+        .node--service-teaser{
+          text-align: center;
+          text-transform: uppercase;
+          .block-field-blocknodeservicefield-type-of-service{
+            font-size: 25px;
+            line-height: 40px;
+            margin-top: 20px;
+            height: 80px;
+          }
+          .block-field-blocknodeservicebody{
+            color: $gray;
+            margin: 10px 0 30px 0;
+          }
+          .block-field-blocknodeservicefield-read-more-text{
+            a{
+              background-color: $blue;
+              text-transform: uppercase;
+              color: $white;
+              padding: 7px 10px;
+              transition: all 0.1s ease;
+              &:hover{
+                background-color: $light-blue;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .node--service-full{
+    padding-right: 20px;
+    .layout__region--content{
+      margin: 0 auto;
+      max-width: $desktopLarge;
+      padding: 0 10px;
+      .block-field-blocknodeservicefield-image{
+        float: right;
+        padding-right: 20px;
+        padding-left: 10px;
+        img{
+          max-width: 100%;
+          height: auto;
+          width: 150px;
+        }
+      }
+      .block-field-blocknodeservicebody{
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+
+

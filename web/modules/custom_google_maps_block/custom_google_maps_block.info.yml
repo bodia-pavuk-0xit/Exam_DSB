@@ -1,0 +1,17 @@
+name: 	Custom Google Map Block
+type: module
+description: Custom Google Maps Drupal 8
+package: Custom
+core_version_requirement: ^8 || ^9 || ^10
+
+
+dependencies:
+  - block
+
+
+configure: maps.form
+
+# Information added by Drupal.org packaging script on 2023-04-25
+version: '1.0.1'
+project: 'custom_google_maps_block'
+datestamp: 1682425963

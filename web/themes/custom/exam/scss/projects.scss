@@ -1,0 +1,158 @@
+@import "variables";
+@import "mixin";
+
+.view-projects,
+.view-id-taxonomy_term{
+  text-transform: uppercase;
+  max-width: $desktopLarge;
+  margin: 0 auto;
+  padding: 0 10px;
+  .view-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    .views-row {
+      text-align: center;
+      background-color: $white;
+      margin-bottom: 20px;
+      padding-bottom: 15px;
+    }
+    .block-field-blocknodeprojecttitle {
+      font-size: 25px;
+    }
+
+    .block-field-blocknodeprojectfield-type-of-service {
+      padding-bottom: 20px;
+    }
+
+    .block-field-blocknodeprojectfield-details {
+      a {
+        background-color: $blue;
+        text-transform: uppercase;
+        color: $white !important;
+        padding: 7px 10px;
+        transition: all 0.3s ease;
+
+        &:hover {
+          background-color: $light-blue;
+        }
+      }
+    }
+  }
+}
+.node--project-full{
+  main .block-system-main-block p {
+    padding: 0;
+  }
+  .layout__region--content{
+    margin: 0 auto;
+    max-width: $desktopLarge;
+    padding: 0 10px;
+    .block-field-blocknodeprojectfield-image{
+      float: right;
+      img{
+        max-width: 100%;
+        height: auto;
+        width: 300px;
+      }
+    }
+    .block-field-blocknodeprojectfield-type-of-service{
+      a{
+        color: $dark-blue;
+        font-size: 18px;
+        margin-top: 40px;
+        font-weight: 700;
+        &:hover{
+          color: $blue;
+        }
+      }
+    }
+  }
+}
+.block-field-blocknodeprojecttitle{
+  span{
+    font-size: 25px;
+  }
+}
+.block-field-blocknodeprojectfield-details {
+  a {
+    background-color: $blue;
+    text-transform: uppercase;
+    color: $white !important;
+    padding: 7px 10px;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: $light-blue;
+    }
+  }
+}
+
+/* For screens with width less than 320px*/
+@media (max-width: 500px){
+  /* CSS rules for responsive design */
+  .view-projects {
+    .view-content {
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 30px;
+    }
+  }
+  .node--project-full{
+    padding-right: 20px;
+    .layout__region--content{
+      .block-field-blocknodeprojectfield-image{
+        img{
+          max-width: 100%;
+          height: auto;
+          width: 150px;
+          padding: 10px;
+        }
+      }
+    }
+  }
+}
+/* For screens with width from 501px to 800px */
+@media (min-width: 501px) and (max-width: 800px) {
+  /* CSS rules for responsive design */
+  .view-projects {
+    .view-content {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 20px;
+    }
+  }
+  .node--project-full{
+    padding-right: 20px;
+    .layout__region--content{
+      .block-field-blocknodeprojectfield-image{
+        img{
+          max-width: 100%;
+          height: auto;
+          width: 300px;
+          padding: 10px;
+        }
+      }
+    }
+  }
+}
+
+/* For screens with width from 801px to 1200px */
+@media (min-width: 801px) and (max-width: 1200px) {
+  /* CSS rules for responsive design */
+  .view-projects .view-content .block-field-blocknodeprojecttitle {
+    font-size: 19px;
+  }
+  .node--project-full{
+    padding-right: 20px;
+    .layout__region--content{
+      .block-field-blocknodeprojectfield-image{
+        img{
+          max-width: 100%;
+          height: auto;
+          width: 300px;
+          padding: 10px;
+        }
+      }
+    }
+  }
+}
+

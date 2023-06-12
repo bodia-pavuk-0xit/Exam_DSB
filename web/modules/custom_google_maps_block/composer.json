@@ -1,0 +1,27 @@
+{
+    "name": "ridharahmi/custom-google-maps-block",
+    "type": "drupal-module",
+    "description": "Custom google maps block drupal 8+",
+    "authors": [
+        {
+            "name": "Ridha Rahmi",
+            "email": "ridharahmi@hotmail.com",
+            "homepage": "https://www.drupal.org/u/ridha-rahmi",
+            "role": "Maintainer"
+        }
+    ],
+    "keywords": ["Drupal"],
+    "license": "GPL-1.0+",
+    "homepage": "https://git.drupalcode.org/project/custom_google_maps_block",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://git.drupalcode.org/project/custom_google_maps_block",
+        "source": "https://git.drupalcode.org/project/custom_google_maps_block"
+    },
+    "require": {
+        "drupal/file": "*"
+    },
+    "suggest": {
+        "drupal/content": "*"
+    }
+}
