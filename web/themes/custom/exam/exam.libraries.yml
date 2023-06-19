@@ -16,8 +16,3 @@ global:
       css/news.css: {}
       css/clients.css: {}
       css//contacts.css: {}
-
-exam_lib:
-  css:
-    component:
-      css/exam.css: {}

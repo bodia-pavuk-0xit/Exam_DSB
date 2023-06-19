@@ -89,17 +89,17 @@
         #search-block-form{
           @include flex-row;
           input[type="search"]{
-            width: 150px;
-            height: 45px;
+            width: 200px;
+            height: 39px;
           }
           input#edit-submit{
-            max-width: 35px;
-            height: 33px;
+            max-width: 26px;
+            height: auto;
             font-size: 0;
             background-color: #ffffff;
             border: 1px solid #999999 !important;
             line-height: 0;
-            padding: 5px;
+            padding: 8px;
           }
         }
       }
@@ -599,29 +599,32 @@ div#block-cheeseburgermenu {
   .region-banner{
     position: relative;
     h2,h3,p{
+      text-align: center;
       position: absolute;
-      left: 12.5%;
+      left: 25%;
       text-transform: uppercase;
-      max-width: 75%;
+      max-width: 50%;
       width: 100%;
+      text-shadow: 3px 2px 5px $dark-blue;
     }
     h2{
-      top: calc(50% - 70px);
+      top: calc(50% - 60px);
       color: $white;
-      font-size: 30px;
+      font-size: 20px;
       font-weight: 400;
     }
     h3{
       color: $dark-blue;
-      font-size: 20px;
+      font-size: 16px;
       font-weight: 400;
-      top: calc(50% - 32px);
+      top: calc(50% - 35px);
     }
     p{
+      left: 12.5%;
       margin-top: 20px;
       color: #6f9ccb;
-      top: calc(50% - 5px);
-      max-width: 50%;
+      top: calc(50% - 20px);
+      max-width: 75%;
       font-size: 10px;
       line-height: 10px;
     }
@@ -807,13 +810,13 @@ div#block-cheeseburgermenu {
               height: 45px;
             }
             input#edit-submit{
-              max-width: 35px;
-              height: 33px;
+              max-width: 25px;
+              height: auto;
               font-size: 0;
               background-color: #ffffff;
               border: 1px solid #999999 !important;
               line-height: 0;
-              padding: 5px;
+              padding: 6px;
             }
           }
         }
@@ -1051,13 +1054,13 @@ div#block-cheeseburgermenu {
               height: 45px;
             }
             input#edit-submit{
-              max-width: 35px;
-              height: 33px;
+              max-width: 25px;
+              height: auto;
               font-size: 0;
               background-color: #ffffff;
               border: 1px solid #999999 !important;
               line-height: 0;
-              padding: 5px;
+              padding: 6px;
             }
           }
         }
@@ -1294,13 +1297,13 @@ div#block-cheeseburgermenu {
               height: 45px;
             }
             input#edit-submit{
-              max-width: 35px;
-              height: 33px;
+              max-width: 25px;
+              height: auto;
               font-size: 0;
               background-color: #ffffff;
               border: 1px solid #999999 !important;
               line-height: 0;
-              padding: 5px;
+              padding: 6px;
             }
           }
         }

@@ -38,6 +38,7 @@
         "drupal/core-recommended": "^9",
         "drupal/devel": "^5.0",
         "drupal/draggableviews": "^2.1",
+        "drupal/extlink": "^1.7",
         "drupal/facets": "^2.0",
         "drupal/fontawesome": "^2.25",
         "drupal/gin": "^3.0@RC",
@@ -65,6 +66,7 @@
         "drupal/title_field_for_manage_display": "^2.1",
         "drupal/token": "^1.11",
         "drupal/vartheme_claro": "^3.0",
+        "drupal/webform": "^6.1",
         "drush/drush": "^10.2",
         "kenwheeler/slick": "^1.8"
     },

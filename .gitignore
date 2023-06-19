@@ -26,3 +26,10 @@
 /.docksal/docksal-local.env
 /.docksal/docksal-local.yml
 
+# Ignore default files
+*.sql
+/sites/default/files/
+/sites/default/settings.php
+/core/
+/vendor/
+
