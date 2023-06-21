@@ -2,17 +2,17 @@ global:
   css:
     theme:
       "https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" : { external: true }
-      css/elements.css: {}
+      style/elements.css: {}
     component:
-      css/global.css: {}
-      css/header.css: {}
-      css/footer.css: {}
-      css/homepage.css: {}
-      css/layout.css: {}
-      css/about.css: {}
-      css/services.css: {}
-      css/projects.css: {}
-      css/our-team.css: {}
-      css/news.css: {}
-      css/clients.css: {}
-      css//contacts.css: {}
+      style/global.css: {}
+      style/header.css: {}
+      style/footer.css: {}
+      style/homepage.css: {}
+      style/layout.css: {}
+      style/about.css: {}
+      style/services.css: {}
+      style/projects.css: {}
+      style/our-team.css: {}
+      style/news.css: {}
+      style/clients.css: {}
+      style/contacts.css: {}
