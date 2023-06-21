@@ -2,17 +2,21 @@
 
 const gulp = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
+const rename = require('gulp-rename');
 
-gulp.task('sass', function () {
-  return gulp.src('style/*.scss')
+gulp.task('styles', () => {
+  return gulp.src([
+    './scss/global.scss',
+    './scss/*.scss',
+  ])
     .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest(function (file) {
-      return file.base;
-    }));
+    .on('error', sass.logError)
+    .pipe(rename({dirname: ''}))
+    .pipe(gulp.dest('./css'));
 });
 
-gulp.task('watch', function () {
-  gulp.watch('style/*.scss', gulp.series('sass'));
+gulp.task('watch', function() {
+  gulp.watch(['scss/*', 'Components/**/*'], { ignoreInitial: false }, gulp.series(['styles']));
 });
 
-gulp.task('default', gulp.series('sass', 'watch'));
+gulp.task('default', gulp.series(['styles', 'watch']));
